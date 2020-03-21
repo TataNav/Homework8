@@ -55,22 +55,22 @@ public class Main {
 		countPerson++;
 		
 		//Call this method several times on several persons
-		sendMoney(person6, person5, 50);
+		person5.sendMoney(person6, 50);
 		System.out.println(person6.balance);
 		System.out.println(person5.balance);
 		System.out.println();
 		
-		sendMoney(person5, person4, 10);
+		person4.sendMoney(person5, 10);
 		System.out.println(person5.balance);
 		System.out.println(person4.balance);
 		System.out.println();
 		
-		sendMoney(person3, person1, 10);
+		person3.sendMoney(person1, 10);
 		System.out.println(person3.balance);
 		System.out.println(person1.balance);
 		System.out.println();
 		
-		sendMoney(person2, person2, 10);
+		person2.sendMoney(person2, 10);
 		System.out.println(person2.balance);
 		System.out.println(person2.balance);
 		System.out.println();
@@ -130,11 +130,11 @@ public class Main {
 	 * For example, calling a.sendAmount(b, 35.6) must pass 35.6 money to from person a to person b.
 	 */
 	
-	public static void sendMoney(Person fromPerson, Person toPerson, double amount){
-		
-		if(fromPerson != toPerson) {
-			fromPerson.balance = fromPerson.balance - amount;
-			toPerson.balance =  toPerson.balance + amount;
-		}		
-	}
+//	public static void sendMoney(Person fromPerson, Person toPerson, double amount){
+//		
+//		if(fromPerson != toPerson) {
+//			fromPerson.balance = fromPerson.balance - amount;
+//			toPerson.balance =  toPerson.balance + amount;
+//		}		
+//	}
 }
